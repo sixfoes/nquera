@@ -8,7 +8,7 @@ Use [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  "nquera",
+  "sixfoes/nquera",
   config = function()
     require("nquera").setup({
       split_type = "new", --new, vertical, horizontal
