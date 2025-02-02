@@ -90,7 +90,7 @@ function M.send_query(query_type, args)
 
   -- Open buffer for results
   local timestamp = os.date("%Y-%m-%d_%H-%M-%S")
-  local output_buf_name = query_type .. " Result " .. timestamp
+  local output_buf_name = "result-" .. query_type .. "-" .. timestamp
   local output_buf = M.open_buffer(M.default_split_type, output_buf_name)
   vim.api.nvim_buf_set_lines(output_buf, 0, -1, false, output)
 end
